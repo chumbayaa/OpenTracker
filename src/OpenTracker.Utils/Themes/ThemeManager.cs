@@ -61,8 +61,7 @@ public class ThemeManager : ReactiveObject, IThemeManager
     private ITheme LoadTheme(string file)
     {
         var name = Path.GetFileNameWithoutExtension(file);
-        var xaml = File.ReadAllText(file);
-        var style = AvaloniaRuntimeXamlLoader.Parse<IStyle>(xaml);
+        var style = AvaloniaRuntimeXamlLoader.Parse<IStyle>(File.ReadAllText(file));
 
         return _themeFactory(name, style);
     }
