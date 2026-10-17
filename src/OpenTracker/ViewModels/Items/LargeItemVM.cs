@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.Reactive;
 using Avalonia.Input;
 using OpenTracker.Utils;
@@ -12,7 +13,7 @@ public class LargeItemVM : ViewModelBase, ILargeItemVM
 {
     public IItemVM Item { get; }
         
-    public ReactiveCommand<PointerReleasedEventArgs, Unit> HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid> HandleClick { get; }
 
     /// <summary>
     /// Constructor

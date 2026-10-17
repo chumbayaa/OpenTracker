@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 ﻿using System.ComponentModel;
 using System.Reactive;
 using Avalonia.Input;
@@ -26,7 +27,7 @@ public class BossSectionIconVM : ViewModelBase, ISectionIconVM
 
     public IBossSelectPopupVM BossSelect { get; }
         
-    public ReactiveCommand<PointerReleasedEventArgs, Unit> HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid> HandleClick { get; }
 
     public delegate BossSectionIconVM Factory(IBossPlacement bossPlacement);
 

@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.ComponentModel;
 using System.Reactive;
 using Avalonia.Input;
@@ -19,7 +20,7 @@ public class DungeonItemVM : ViewModelBase, IDungeonItemVM
     public bool Visible => _requirement is null || _requirement.Met;
     public IItemVM? Item { get; }
         
-    public ReactiveCommand<PointerReleasedEventArgs, Unit>? HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid>? HandleClick { get; }
 
     /// <summary>
     /// Constructor

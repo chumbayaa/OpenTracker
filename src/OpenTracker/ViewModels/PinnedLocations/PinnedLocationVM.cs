@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reactive;
@@ -30,7 +31,7 @@ public class PinnedLocationVM : ViewModelBase, IPinnedLocationVM
     public List<ISectionVM> Sections { get; }
     public IPinnedLocationNoteAreaVM Notes { get; }
 
-    public ReactiveCommand<PointerReleasedEventArgs, Unit> HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid> HandleClick { get; }
 
     /// <summary>
     /// Constructor

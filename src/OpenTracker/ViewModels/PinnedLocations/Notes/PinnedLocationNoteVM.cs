@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 ﻿using System.ComponentModel;
 using System.Reactive;
 using System.Threading.Tasks;
@@ -31,7 +32,7 @@ public class PinnedLocationNoteVM : ViewModelBase, IPinnedLocationNoteVM
         set => this.RaiseAndSetIfChanged(ref _image, value);
     }
 
-    public ReactiveCommand<PointerReleasedEventArgs, Unit> HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid> HandleClick { get; }
 
     /// <summary>
     /// Constructor

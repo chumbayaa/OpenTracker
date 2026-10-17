@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 ﻿using System.ComponentModel;
 using System.Linq;
 using System.Reactive;
@@ -50,7 +51,7 @@ public class PrizeSectionIconVM : ViewModelBase, ISectionIconVM
         }
     }
         
-    public ReactiveCommand<PointerReleasedEventArgs, Unit> HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid> HandleClick { get; }
 
     public delegate PrizeSectionIconVM Factory(IPrizeSection section);
 

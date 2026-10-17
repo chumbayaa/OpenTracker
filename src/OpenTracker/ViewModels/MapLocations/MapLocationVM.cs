@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.ComponentModel;
 using System.Reactive;
 using System.Threading.Tasks;
@@ -108,8 +109,8 @@ public class MapLocationVM : ViewModelBase, IMapLocationVM
     public double CanvasX => BaseX + Location.OffsetX + MarkingOffsetX;
     public double CanvasY => BaseY + Location.OffsetY + MarkingOffsetY;
         
-    public ReactiveCommand<PointerEventArgs, Unit> HandlePointerEntered { get; }
-    public ReactiveCommand<PointerEventArgs, Unit> HandlePointerExited { get; }
+    public ReactiveCommand<PointerEventArgs, RxVoid> HandlePointerEntered { get; }
+    public ReactiveCommand<PointerEventArgs, RxVoid> HandlePointerExited { get; }
 
     /// <summary>
     /// Constructor

@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 ﻿using System.ComponentModel;
 using System.Reactive;
 using System.Text;
@@ -80,13 +81,13 @@ public class MainWindowVM : DialogViewModelBase, IMainWindowVM
     public IUIPanelAreaVM UIPanel { get; }
     public IMapAreaVM MapArea { get; }
 
-    public ReactiveCommand<Unit, Unit> Open { get; }
-    public ReactiveCommand<Unit, Unit> Save { get; }
-    public ReactiveCommand<Unit, Unit> SaveAs { get; }
-    public ReactiveCommand<Unit, Unit> Reset { get; }
-    public ReactiveCommand<Unit, Unit> Undo { get; }
-    public ReactiveCommand<Unit, Unit> Redo { get; }
-    public ReactiveCommand<Unit, Unit> ToggleDisplayAllLocations { get; }
+    public ReactiveCommand<RxVoid, RxVoid> Open { get; }
+    public ReactiveCommand<RxVoid, RxVoid> Save { get; }
+    public ReactiveCommand<RxVoid, RxVoid> SaveAs { get; }
+    public ReactiveCommand<RxVoid, RxVoid> Reset { get; }
+    public ReactiveCommand<RxVoid, RxVoid> Undo { get; }
+    public ReactiveCommand<RxVoid, RxVoid> Redo { get; }
+    public ReactiveCommand<RxVoid, RxVoid> ToggleDisplayAllLocations { get; }
 
     /// <summary>
     /// Constructor

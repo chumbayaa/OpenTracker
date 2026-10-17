@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.Reactive;
 using Avalonia.Input;
 using OpenTracker.Models.Locations.Map;
@@ -9,8 +10,8 @@ public interface IMapLocationColorProvider : IReactiveObject
 {
     string BorderColor { get; }
     string Color { get; }
-    ReactiveCommand<PointerEventArgs, Unit> HandlePointerEntered { get; }
-    ReactiveCommand<PointerEventArgs, Unit> HandlePointerExited { get; }
+    ReactiveCommand<PointerEventArgs, RxVoid> HandlePointerEntered { get; }
+    ReactiveCommand<PointerEventArgs, RxVoid> HandlePointerExited { get; }
 
     delegate IMapLocationColorProvider Factory(IMapLocation mapLocation);
 }

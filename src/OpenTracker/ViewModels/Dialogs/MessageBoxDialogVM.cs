@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 ﻿using System.Reactive;
 using OpenTracker.Utils.Dialog;
 using ReactiveUI;
@@ -12,8 +13,8 @@ public class MessageBoxDialogVM : DialogViewModelBase<bool>, IMessageBoxDialogVM
     public string Title { get; }
     public string Text { get; }
 
-    public ReactiveCommand<Unit, Unit> YesCommand { get; }
-    public ReactiveCommand<Unit, Unit> NoCommand { get; }
+    public ReactiveCommand<RxVoid, RxVoid> YesCommand { get; }
+    public ReactiveCommand<RxVoid, RxVoid> NoCommand { get; }
         
     /// <summary>
     /// Constructor

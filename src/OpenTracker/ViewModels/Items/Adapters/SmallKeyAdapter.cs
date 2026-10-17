@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.ComponentModel;
 using System.Globalization;
 using System.Reactive;
@@ -29,7 +30,7 @@ public class SmallKeyAdapter : ViewModelBase, IItemAdapter
         
     public IBossSelectPopupVM? BossSelect { get; } = null;
         
-    public ReactiveCommand<PointerReleasedEventArgs, Unit> HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid> HandleClick { get; }
 
     public delegate SmallKeyAdapter Factory(IItem item);
 

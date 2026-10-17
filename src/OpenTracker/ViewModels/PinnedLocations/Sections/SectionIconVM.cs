@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.ComponentModel;
 using System.Globalization;
 using System.Reactive;
@@ -22,7 +23,7 @@ public class SectionIconVM : ViewModelBase, ISectionIconVM
     public bool LabelVisible { get; }
     public string Label => _section.Available.ToString(CultureInfo.InvariantCulture);
         
-    public ReactiveCommand<PointerReleasedEventArgs, Unit> HandleClick { get; }
+    public ReactiveCommand<PointerReleasedEventArgs, RxVoid> HandleClick { get; }
 
     /// <summary>
     /// Constructor

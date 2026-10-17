@@ -1,3 +1,4 @@
+using RxVoid = ReactiveUI.Primitives.RxVoid;
 ﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Reactive;
@@ -32,8 +33,8 @@ public class MarkingSelectVM : ViewModelBase, IMarkingSelectVM
         set => this.RaiseAndSetIfChanged(ref _popupOpen, value);
     }
 
-    public ReactiveCommand<MarkType?, Unit> ChangeMarking { get; }
-    public ReactiveCommand<Unit, Unit> ClearMarking { get; }
+    public ReactiveCommand<MarkType?, RxVoid> ChangeMarking { get; }
+    public ReactiveCommand<RxVoid, RxVoid> ClearMarking { get; }
 
     /// <summary>
     /// Constructor
