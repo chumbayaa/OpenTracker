@@ -1,6 +1,5 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-﻿using System;
-using System.Reactive;
+using System;
 using ReactiveUI;
 
 namespace OpenTracker.ViewModels.Menus;

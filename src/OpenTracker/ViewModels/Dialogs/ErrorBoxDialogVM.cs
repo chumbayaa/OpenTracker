@@ -1,5 +1,5 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-﻿using System.Reactive;
+using System.Reactive;
 using OpenTracker.Utils.Dialog;
 using ReactiveUI;
 

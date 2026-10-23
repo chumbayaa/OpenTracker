@@ -1,6 +1,5 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-﻿using System.ComponentModel;
-using System.Reactive;
+using System.ComponentModel;
 using Avalonia.Input;
 using Avalonia.Threading;
 using OpenTracker.Models.BossPlacements;

@@ -1,6 +1,5 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-﻿using System.Collections.Specialized;
-using System.Reactive;
+using System.Collections.Specialized;
 using System.Threading.Tasks;
 using Avalonia.Layout;
 using Avalonia.Threading;

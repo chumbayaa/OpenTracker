@@ -1,7 +1,6 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.ComponentModel;
 using System.Linq;
-using System.Reactive;
 using System.Text;
 using Avalonia.Input;
 using Avalonia.Threading;

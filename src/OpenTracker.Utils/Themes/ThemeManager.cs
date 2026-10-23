@@ -7,6 +7,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Markup.Xaml.Styling;
 using Avalonia.Styling;
 using ReactiveUI;
+using ReactiveUI.Primitives;
 
 namespace OpenTracker.Utils.Themes;
 

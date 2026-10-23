@@ -1,7 +1,6 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.ComponentModel;
-using System.Reactive;
 using Avalonia.Threading;
 using OpenTracker.Models.Locations;
 using OpenTracker.Models.Markings;

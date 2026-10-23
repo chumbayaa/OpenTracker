@@ -1,7 +1,6 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System.ComponentModel;
 using System.Globalization;
-using System.Reactive;
 using Avalonia.Input;
 using Avalonia.Threading;
 using OpenTracker.Models.Sections;

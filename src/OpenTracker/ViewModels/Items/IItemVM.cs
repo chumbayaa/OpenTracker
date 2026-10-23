@@ -1,5 +1,4 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-using System.Reactive;
 using Avalonia.Input;
 using OpenTracker.Models.Requirements;
 using OpenTracker.ViewModels.Items.Adapters;

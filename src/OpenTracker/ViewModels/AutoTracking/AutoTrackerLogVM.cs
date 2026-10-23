@@ -1,9 +1,8 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-﻿using System;
+using System;
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.IO;
-using System.Reactive;
 using System.Threading.Tasks;
 using Avalonia.Threading;
 using OpenTracker.Models.AutoTracking.Logging;

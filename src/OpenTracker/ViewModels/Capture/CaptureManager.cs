@@ -1,6 +1,5 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
 using System;
-using System.Reactive;
 using System.Threading.Tasks;
 using Avalonia.Threading;
 using OpenTracker.Utils.Dialog;

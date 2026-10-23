@@ -1,5 +1,4 @@
 using RxVoid = ReactiveUI.Primitives.RxVoid;
-using System.Reactive;
 using ReactiveUI;
 
 namespace OpenTracker.ViewModels.Capture;
